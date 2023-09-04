@@ -31,8 +31,20 @@ img {
 
 /* Start Common CSS Style */
 
+/* Start Preloader Container Here */
+#preloader_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    inset: 0;
+    z-index: 15;
+}
 
-
+/* Start Preloader Container Here */
 
 /* Start Nav Section here */
 #navbar_section {
@@ -80,30 +92,29 @@ img {
 
 
 /* Start Preloader Section here */
-#preloader .loaderbox_one {
+#preloader_container .loaderbox_one {
     margin: 100px auto;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+
 }
 
-#preloader .inner_container {
+#preloader_container .inner_container {
     position: relative;
     display: flex;
-    height: 200px;
+    height: 300px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: rgb(209, 207, 211);
 }
 
-#preloader .loader_item {
+#preloader_container .loader_item {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     animation: move 2s linear infinite;
 }
@@ -119,14 +130,14 @@ img {
 }
 
 
-#preloader .loader_item:nth-child(2),
-#preloader .loader_item:nth-child(4) {
+#preloader_container .loader_item:nth-child(2),
+#preloader_container .loader_item:nth-child(4) {
     filter: hue-rotate(290deg);
     animation-delay: -1s;
 }
 
-#preloader .loader_item:nth-child(1)::before,
-#preloader .loader_item:nth-child(2)::before {
+#preloader_container .loader_item:nth-child(1)::before,
+#preloader_container .loader_item:nth-child(2)::before {
     position: absolute;
     content: "";
     width: 50%;
@@ -134,17 +145,17 @@ img {
     background-color: yellow;
     background: linear-gradient(to top, transparent, rgba(0, 255, 249, .4));
     background-repeat: no-repeat;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
 }
 
 .loader_item .span {
     background-color: rgb(18, 19, 18);
     position: absolute;
-    left: 20px;
-    top: 20px;
-    bottom: 20px;
-    right: 20px;
+    left: 40px;
+    top: 40px;
+    bottom: 40px;
+    right: 40px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -154,8 +165,8 @@ img {
     left: 50%;
     top: 0;
     z-index: 10;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transform: translate(-50%);
     box-shadow: 0 0 10px #00fff9,
@@ -166,7 +177,14 @@ img {
         0 0 60px #00fff9,
         0 0 70px #00fff9,
         0 0 80px #00fff9,
-        0 0 90px #00fff9
+        0 0 90px #00fff9,
+        0 0 100px #00fff9,
+        0 0 110px #00fff9,
+        0 0 120px #00fff9
 }
+
+/* Start Preloader two */
+
+/* Start Preloader two */
 
 /* Start Preloader Section here */
