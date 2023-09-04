@@ -200,7 +200,6 @@ img {
     width: 100px;
     height: 100px;
     position: absolute;
-    background-color: rgb(213, 213, 178);
     display: flex;
     align-items: center;
     justify-content: center;
