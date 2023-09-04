@@ -10,7 +10,7 @@ $(function () {
     })
 
 
-    // $(window).on('load', function () {
-    //     $('#preloader_container').hide();
-    // })
+    $(window).on('load', function () {
+        $('#preloader_container').hide();
+    })
 })
