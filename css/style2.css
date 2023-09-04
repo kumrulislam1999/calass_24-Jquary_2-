@@ -1,0 +1,172 @@
+/* Start Common CSS Style */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* Start Common CSS Style */
+
+
+
+
+/* Start Nav Section here */
+#navbar_section {
+    margin-bottom: 50px;
+}
+
+#navbar_section.fixed {
+    background-color: rgb(222, 219, 214);
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    animation: menu_fixed 1s ease-out;
+}
+
+
+
+@keyframes menu_fixed {
+    0% {
+        top: -150px;
+    }
+
+    100% {
+        top: 0%
+    }
+}
+
+#navbar_section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar_section ul li a {
+    padding: 15px 30px;
+    background-color: bisque;
+    margin: 5px;
+}
+
+
+
+/* Start Nav Section here */
+
+
+
+
+
+/* Start Preloader Section here */
+#preloader .loaderbox_one {
+    margin: 100px auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#preloader .inner_container {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(209, 207, 211);
+}
+
+#preloader .loader_item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#preloader .loader_item:nth-child(2),
+#preloader .loader_item:nth-child(4) {
+    filter: hue-rotate(290deg);
+    animation-delay: -1s;
+}
+
+#preloader .loader_item:nth-child(1)::before,
+#preloader .loader_item:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+    background: linear-gradient(to top, transparent, rgba(0, 255, 249, .4));
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.loader_item .span {
+    background-color: rgb(18, 19, 18);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.loader_item .italic {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 10px #00fff9,
+        0 0 20px #00fff9,
+        0 0 30px #00fff9,
+        0 0 40px #00fff9,
+        0 0 50px #00fff9,
+        0 0 60px #00fff9,
+        0 0 70px #00fff9,
+        0 0 80px #00fff9,
+        0 0 90px #00fff9
+}
+
+/* Start Preloader Section here */
