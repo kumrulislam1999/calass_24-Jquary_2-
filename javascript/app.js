@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    $('#preloader_container').hide();
+})
+
+
 $(function () {
     $(window).on('scroll', function () {
 
@@ -9,8 +14,4 @@ $(function () {
         else { $('#navbar_section').removeClass('fixed'); }
     })
 
-
-    $(window).on('load', function () {
-        $('#preloader_container').hide();
-    })
 })
